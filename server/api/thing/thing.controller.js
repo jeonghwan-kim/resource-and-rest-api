@@ -47,7 +47,7 @@ exports.create = function (req, res) {
     status: req.body.status || false
   };
   db.Things.push(thing);
-  res.json(201, db.Things);
+  res.json(201, thing);
 };
 
 // Get a things
